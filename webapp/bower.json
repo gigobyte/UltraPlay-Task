@@ -1,0 +1,24 @@
+{
+  "name": "client",
+  "authors": [
+    "gigobyte <gigobest2@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "restangular": "^1.5.2",
+    "bulma": "^0.2.3",
+    "angular-mocks": "^1.5.8"
+  }
+}

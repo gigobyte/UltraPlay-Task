@@ -1,0 +1,20 @@
+<div class="data-container" data-ng-show="matchCtrl.markets.length > 0">
+    <div class="title">{{matchCtrl.teamOne}} vs {{matchCtrl.teamTwo}}</div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Odds for {{matchCtrl.teamOne}}</th>
+                <th>Odds for {{matchCtrl.teamTwo}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="market in matchCtrl.markets">
+                <th>{{market.Name}}</th>
+                <th>{{market.Odds[0].Value}}</th>
+                <th>{{market.Odds[1].Value}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>

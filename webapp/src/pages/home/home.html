@@ -1,0 +1,20 @@
+<div class="data-container" data-ng-show="homeCtrl.matches.length > 0">
+    <div class="title">MATCHES</div>
+
+    <table class="table matches-table">
+        <thead>
+            <tr>
+                <th>Home Team</th>
+                <th>Away Team</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="match in homeCtrl.matches" data-ui-sref="home.match({id: match.Id})">
+                <th>{{match.HomeTeamName}}</th>
+                <th>{{match.AwayTeamName}}</th>
+                <th>{{match.Score}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
