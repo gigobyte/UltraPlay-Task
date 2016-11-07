@@ -3,8 +3,9 @@ describe('Controller: MatchCtrl', function() {
 
     var $httpBackend, ctrl
 
-    beforeEach(inject(function($controller, _$httpBackend_) {
+    beforeEach(inject(function($controller, _$httpBackend_, $rootScope) {
         ctrl = $controller('MatchCtrl', {
+            $scope: $rootScope.$new(),
             $state: { params: { id: 999 }}
         })
         $httpBackend = _$httpBackend_

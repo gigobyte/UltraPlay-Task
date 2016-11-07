@@ -3,7 +3,7 @@ var app = angular.module('taskApp', ['ui.router', 'restangular'])
 app.config(function($stateProvider, $urlRouterProvider, RestangularProvider) {
     function configureRoutes() {
         $urlRouterProvider.when('', '/')
-		$urlRouterProvider.otherwise(function() { return '/' })
+        $urlRouterProvider.otherwise(function() { return '/' })
 
         $stateProvider.state('home', {
     		url: '',
